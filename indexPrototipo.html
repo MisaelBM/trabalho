@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protótipo</title>
+</head>
+<body>
+    <div id="carregamento">
+        <h1 style="text-align: center;">Carregando...</h1>
+        <h2 style="text-align: center;">Tenha paciência</h2>
+    </div>
+    <div id="menu" class="menu">
+        <div class="linha1"></div>
+        <div class="linha2"></div>
+        <div class="linha3"></div>
+    </div>
+    <div class="menuItem" id="menuItem">
+        <ol>
+            <li>Menu</li>
+            <hr>
+            <li id="moedaMenu">Moedas</li>
+            <li id="acoesMenu">Ações</li>
+            <li>undefined</li>
+            <li>undefined</li>
+            <li id="notificacaoMenu">Alertas</li>
+            <hr>
+            <li class="contaMenu"><div id="loginMenu">Login</div> <div id="criarContaMenu">Criar conta</div></li>
+        </ol>
+    </div>
+    <div class="select">
+        <div>
+            <select name="coin" id="coin" class="coin">                                        
+                <option value="first">Escolha uma moeda</option>
+                <option value="EUR" id="EUR">Euro</option>
+                <option value="USD" id="USD">Dólar americano</option>
+                <option value="BTC" id="BTC">Bitcoin</option>
+                <option value="JPY" id="JPY">Lene japonês</option>
+                <option value="GBP" id="GBP">Libra esterlina</option>
+                <option value="AUD" id="AUD">Dólar australiano</option>
+                <option value="CAD" id="CAD">Dólar canadense</option>
+            </select>
+        </div>
+        <div>
+            <select name="acoes" id="acoes" class="acoes">
+                <option value="first" >Escolha uma ação</option>
+                <option value="MGLU3">Magazine Luiza ON</option>
+                <option value="VALE3">Vale ON</option>
+                <option value="PETR4">Petrobras PN</option>
+                <option value="ITUB4">Itaú Unibanco PN</option>
+                <option value="BBDC4">Bradesco PN</option>
+                <option value="ASAI3">Assaí ON</option>
+                <option value="ELET6">Eletrobras PNB</option>
+            </select>
+        </div>
+    </div>
+    <div id="visor" class="visor">
+        <span id="quadroDeValores"></span>
+        <span id="diferencaDeValor"></span>
+        <span id="horaDaCotacao"></span>
+    </div>
+    <div class="notificacao" id="notificacao">
+        <h2>Alertas</h2>
+        <hr>
+        <button class="addNotification" id="addNotification">+ adicionar</button>
+        <div id="confirmDelete" class="confirmDelete"><p>Você deseja excluir?</p><button id="SimDelete" class="SimDelete">Sim</button> <button id="cancelarDelete" class="cancelarDelete">Cancelar</button></div>
+        <div id="NotificationVisor" class="NotificationVisor"></div>
+    </div>
+    <div class="confNotification" id="confNotification">
+        <h2>Criar alerta</h2>
+        <p>Moeda/Ação <br> <select name="selectNotification" id="selectNotification" autofocus>
+            <option value="first">Selecione um</option>
+                <option value="first" disabled>Moedas</option>
+                <option value="EUR" id="EUR">Euro</option>
+                <option value="USD" id="USD">Dólar americano</option>
+                <option value="BTC" id="BTC">Bitcoin</option>
+                <option value="JPY" id="JPY">Lene japonês</option>
+                <option value="GBP" id="GBP">Libra esterlina</option>
+                <option value="AUD" id="AUD">Dólar australiano</option>
+                <option value="CAD" id="CAD">Dólar canadense</option>
+                <option value="first" disabled>Ações</option>
+                <option value="MGLU3">Magazine Luiza ON</option>
+                <option value="VALE3">Vale ON</option>
+                <option value="PETR4">Petrobras PN</option>
+                <option value="ITUB4">Itaú Unibanco PN</option>
+                <option value="BBDC4">Bradesco PN</option>
+                <option value="ASAI3">Assaí ON</option>
+                <option value="ELET6">Eletrobras PNB</option>
+        </select></p>
+        <p>Tipo de variação <br> <select name="tipoNotification" id="tipoNotification">
+            <option value="mais">Quando valor subir</option>
+            <option value="menos">Quando valor diminuir</option>
+            <option value="qualquer">Houver variação consideravel</option>
+        </select></p>
+        <p>Valor <br> <input type="number" name="valorVariacao" id="valorVariacao" placeholder="Digite um valor"></p>
+        <p><button id="cancelBtn" class="cancelBtn">Cancelar</button></p>
+        <p><button id="creatBtn" class="creatBtn" disabled>Criar</button></p>
+    </div>
+    <div class="telaDeLogin" id="telaDeLogin">
+        <h2>Login</h2>
+        <input type="text" name="nomeDeUsuario" id="nomeDeUsuario" placeholder="Nome de usuário">
+        <input type="text" name="senhaDoUsuario" id="senhaDoUsuario" placeholder="Senha"> <br>
+        <button class="cancelLogin" id="cancelLogin">Cancelar</button>
+        <button id="entrarConta" class="entrarConta">Entrar</button>
+    </div>
+</body>
+    <link rel="stylesheet" href="stylePrototipo.css">
+    <script src="scriptPrototipo.js"></script>
+    <script src="alertas.js"></script>
+    <script>
+        const carregamento = document.getElementById("carregamento");
+        setTimeout(function () {
+            carregamento.style.display = "none";
+            menu.style.display = "block";
+        }
+        ,2000);
+    </script>
+</html>

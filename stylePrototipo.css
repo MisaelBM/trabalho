@@ -1,0 +1,178 @@
+body {
+    background-color: rgb(41, 41, 41);
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    margin-top: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.menu {
+    margin-top: -2rem;
+    position: fixed;
+    z-index: 1000;
+    display: none;
+}
+.linha1, .linha2, .linha3 {
+    background-color: black;
+    width: 35px;
+    height: 6px;
+    border-radius: 5px;
+    margin: 0.4rem;
+    transition: 0.4s;
+}
+.linha1st {
+    transform: translate(0, 12px) rotate(-45deg);
+    transition: 0.4s;
+}
+.linha2st {
+    opacity: 0;
+    transition: 0.4s;
+}
+.linha3st {
+    transform: translate(0, -12px) rotate(45deg);
+    transition: 0.4s;
+}
+.menuItem {
+    border: 0px solid black;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(68, 68, 68);
+    position: fixed;
+    font-size: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    left: -250%;
+    transition: 0.6s;
+    margin-top: -2rem;
+}
+.menuItemst {
+    left: 0%;
+    transition: 0.6s; 
+}
+ol {
+    list-style: none;
+}
+.select {
+    text-align: center;  
+}
+.coin {
+    font-size: 18px;
+    background-color: rgb(24, 24, 24);
+    color: #fff;
+    display: block;
+    display: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+}
+.acoes {
+    font-size: 18px;
+    background-color: rgb(24, 24, 24);
+    color: #fff;
+    display: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+}
+.atencao {
+    color: rgb(250, 24, 24);
+}
+.notificacao {
+    display: none;
+    text-align: center;
+}
+.addNotification {
+    font-size: 20px;
+}
+.confNotification {
+    border: 0px solid rgb(124, 124, 124);
+    padding: 15px;
+    background-color: #353535;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    box-shadow: #181818 0 5px 5px;
+    border-radius: 10px;
+}
+.cancelBtn {
+    width: 200px;
+    font-size: 20px;
+    padding: 5px; 
+    margin: 0;
+    background-color: rgb(161, 161, 161);
+    box-shadow: #181818 0 5px 5px;
+    border-radius: 10px;
+}
+.creatBtn {
+    width: 200px;
+    font-size: 20px;
+    padding: 5px; 
+    margin: 0;
+    box-shadow: #181818 0 5px 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+.NotificationVisor {
+    list-style: none;
+}
+.boxNotification {
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 13px;
+    padding-left: 8px;
+    padding-top: 5px;
+    margin-top: 2rem;
+    background-color: #5a5a5a;
+    box-shadow: #444444 0 5px 10px;
+}
+.trash {
+    margin-left: 90%;
+    height: 20px;
+}
+.confirmDelete {
+    position: fixed;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #444444;
+    padding: 10px;
+    width: 150px;
+    font-size: 14px;
+    display: none;
+}
+.SimDelete {
+    background-color: #acaaaa;
+    border-radius: 5px;
+}
+.cancelarDelete {
+    background-color: #e7e5e5;
+    border-radius: 5px;
+}
+.contaMenu {
+    margin-top: 1rem;
+    font-size: 20px;
+}
+.telaDeLogin {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(82, 82, 82);
+    text-align: center;
+    padding-bottom: 25px;
+    margin-top: 4rem;
+    display: none;
+}
+.entrarConta {
+    border-radius: 5px;
+    width: 100px;
+    margin-top: 1rem;
+}
+.cancelLogin {
+    background-color: #c9c9c9;
+    border-radius: 5px;
+    width: 100px;
+    margin-top: 1rem;
+}
